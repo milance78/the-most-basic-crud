@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root {
+    --main-color: rgb(237, 237, 237);
+  }
+
+body {
+    padding: 50px 10% 0;
+    
+
+}
+.container {
+    display: flex;
+    height: 80vh;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+}
+
+/* section left */
+
+.left input {
+    margin: 10px 0;
+    display: block;
+    padding: 5px;
+    font-size: 1rem;
+}
+.left button {
+    padding: 5px 20px;
+    margin-top: 15px;
+}
+/* section right */
+
+.display {
+    width: 400px;
+    height: 400px;
+    background: var(--main-color); 
+    padding: 10px 15px;
+}
+.display-data-header,
+.display-data-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+.display-data-header {
+    color: rgb(104, 104, 104);
+}
+
+.display-data-header>p{
+    width: 38%;
+}
+.display-input-firstName,
+.display-input-lastName{
+    width: 38%; 
+    background: var(--main-color); 
+    border: none;
+    user-select: none; 
+    color: black;
+    padding: 4px 6px;
+}
+.edit-mode {
+    background: white;
+    border: solid 1px rgb(190, 190, 190);
+    border-radius: 3px;
+}
+.line {
+    background: rgb(204, 204, 204);
+    width: 100%;
+    height: 1px;
+    margin: 5px 0;
+}
+.edit,
+.delete,
+.empty {
+    width: 10%;
+    text-align: center;
+}
+.edit {
+    color: rgb(189, 192, 1);
+    cursor: pointer;
+}
+.delete {
+    color: firebrick;
+    cursor: pointer;
+}
